@@ -1,0 +1,3 @@
+Habría que definir un:
+	"tatu-styles-admin.css" que quede fijo para toda la parte administrativa, así eso se mantiene para todos los sistemas y 
+se puedan hacer las pruebas más cómodos y además sea una ventaja para no tener que estar pensando en esto por cada sistema.

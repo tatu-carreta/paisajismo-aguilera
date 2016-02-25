@@ -7,6 +7,7 @@
         
         <!-- abre LINK -->
         <link href="favicon.ico" rel="shortcut icon">
+        <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:400,300italic,300,400italic,500italic,500,700,800,700italic' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
         <meta name="description" content="{{ Lang::get('html.head.description') }}">
         <meta name="Keywords" content="{{ Lang::get('html.head.keywords') }}">
@@ -26,7 +27,7 @@
         <!--<link rel="stylesheet" type="text/css" href="{{URL::to('css/styleSlideHome.css')}}" />-->
         <!--<link rel="stylesheet" type="text/css" href="{{URL::to('css/base.css')}}">-->
         <link rel="stylesheet" type="text/css" href="{{URL::to('css/base_2.css')}}"> 
-        <!--<link rel="stylesheet" type="text/css" href="{{URL::to('css/stylesOffitec.css')}}"> -->
+        <link rel="stylesheet" type="text/css" href="{{URL::to('css/styles.css')}}">
         
         <!-- M O D E R N I Z R -->
         <script src="{{URL::to('js/modernizr.custom.05470.js')}}"></script>
@@ -109,7 +110,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1 class="logo pull-left"><a href="{{URL::to('/')}}" >Paisajismo Aguilera</a></h1>
+                            <h1 class="logo pull-left"><a href="{{URL::to('/')}}" ><img src="{{ URL::to('images/patricia-aguilera.gif')}}" /><span>Paisajismo Aguilera</span></a></h1>
                              <!-- B T N   C A R R I T O -->
                              <?php
                              /*

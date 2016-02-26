@@ -5,3 +5,6 @@ h1, h2, h3 {font-weight: 400}
 .divMenu {float: none}
 #menuPrincipal a {font-size: 1.32em; height: 32px; line-height: 32px; padding: 0 10px !important; text-transform: lowercase;}
 #menuPrincipal a:hover {background: #8aa62d}
+
+footer {padding-top: 5px;margin: 40px 0px 50px 0px; letter-spacing: 1px; color: #999;}
+footer .container {border-top:1px solid #666;}

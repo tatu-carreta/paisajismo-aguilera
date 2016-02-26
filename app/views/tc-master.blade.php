@@ -171,7 +171,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12 col-sm-10 col-xs-12">
-                                <div class="clearfix"></div>
+                                <div class="copy"><p><a href="mailto:patricia.aguilera.ar@gmail.com">patricia.aguilera.ar@gmail.com</a> / 54 221 15 589-8285 / 54 221 471-4668 / Gonnet - La Plata - Buenos Aires - Argentina</p></div>
                                 <p class="firmalaura">{{ Lang::get('html.copyright') }} <a href="http://www.laurachuburu.com.ar/" target="_blank">www.laurachuburu.com.ar</a></p>
                             </div>
                         </div>

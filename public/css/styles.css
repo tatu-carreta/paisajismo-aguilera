@@ -1,10 +1,94 @@
-body {background-color: #000; color: #fff; font-family: 'Alegreya Sans', sans-serif;}
-h1, h2, h3 {font-weight: 400}
-
-.logo span {display:none}
-.divMenu {float: none}
-#menuPrincipal a {font-size: 1.32em; height: 32px; line-height: 32px; padding: 0 10px !important; text-transform: lowercase;}
-#menuPrincipal a:hover {background: #8aa62d}
-
-footer {padding-top: 5px;margin: 40px 0px 50px 0px; letter-spacing: 1px; color: #999;}
-footer .container {border-top:1px solid #666;}
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+h1, h2, h3 {
+  font-weight: 400;
+}
+.logo span {
+  display: none;
+}
+.divMenu {
+  float: none;
+}
+#menuPrincipal {
+  width: 100%;
+  text-align: justify;
+}
+#menuPrincipal:after {
+  content: ".";
+  display: inline-block;
+  width: 100%;
+  height: 0;
+  visibility: hidden;
+}
+#menuPrincipal a {
+  font-size: 1.32em;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px !important;
+  text-transform: none;
+}
+#menuPrincipal a:hover {
+  background: #8aa62d;
+}
+.navbar-collapse {
+  padding: 0;
+}
+.navbar-nav > li {
+  float: none;
+  display: inline-block;
+}
+footer {
+  padding-top: 5px;
+  margin: 40px 0px 50px 0px;
+  letter-spacing: 1px;
+  color: #999;
+  font-size: 16px;
+}
+footer a {
+  color: #999;
+}
+footer a:hover {
+  color: #aaa;
+}
+footer .copy {
+  border-top: 1px solid #666;
+}
+@media (max-width: 991px) {
+  /* since 3.1.0 */  .navbar-header {
+    float: none;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+  .navbar-nav {
+    float: none !important;
+    margin: 7.5px -15px;
+  }
+  .navbar-nav > li {
+    float: none;
+  }
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .navbar-text {
+    float: none;
+    margin: 15px 0;
+  }
+  .navbar-collapse.collapse.in {
+    display: block !important;
+  }
+  .collapsing {
+    overflow: hidden !important;
+  }
+}

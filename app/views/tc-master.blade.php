@@ -111,6 +111,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <h1 class="logo pull-left"><a href="{{URL::to('/')}}" ><img src="{{ URL::to('images/patricia-aguilera.gif')}}" /><span>Paisajismo Aguilera</span></a></h1>
+                            <a class="facebook" href=""><span>Facebook</span></a>
                              <!-- B T N   C A R R I T O -->
                              <?php
                              /*
@@ -170,7 +171,7 @@
                 @if(!Auth::check())
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-12 col-sm-10 col-xs-12">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
                                 <div class="copy"><p><a href="mailto:patricia.aguilera.ar@gmail.com">patricia.aguilera.ar@gmail.com</a> / 54 221 <strong>15 589-8285</strong> / 54 221 <strong>471-4668</strong> / Gonnet - La Plata - Buenos Aires - Argentina</p></div>
                                 <p class="firmalaura">{{ Lang::get('html.copyright') }} <a href="http://www.laurachuburu.com.ar/" target="_blank">www.laurachuburu.com.ar</a></p>
                             </div>

@@ -23,6 +23,12 @@ h1, h2, h3 {
   height: 0;
   visibility: hidden;
 }
+#menuPrincipal li:after {
+  content: ".";
+  width: 1px;
+  height: 30px;
+  background: #fff;
+}
 #menuPrincipal a {
   font-size: 1.32em;
   height: 30px;
@@ -33,12 +39,32 @@ h1, h2, h3 {
 #menuPrincipal a:hover {
   background: #8aa62d;
 }
+a.facebook {
+  width: 41px;
+  height: 42px;
+  display: block;
+  float: right;
+  background-image: url(../images/facebook.jpg);
+  margin-top: 20px;
+  position: relative;
+  z-index: 100;
+}
+a.facebook:hover {
+  background-position: right top;
+}
+a.facebook span {
+  display: none;
+}
 .navbar-collapse {
   padding: 0;
 }
 .navbar-nav > li {
   float: none;
   display: inline-block;
+}
+.banner {
+  min-height: 350px;
+  background: #666;
 }
 footer {
   padding-top: 5px;
@@ -72,10 +98,11 @@ footer .copy {
   }
   .navbar-nav {
     float: none !important;
-    margin: 7.5px -15px;
+    margin: 7.5px 0px;
   }
   .navbar-nav > li {
     float: none;
+    display: block;
   }
   .navbar-nav > li > a {
     padding-top: 10px;

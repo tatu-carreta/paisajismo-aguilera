@@ -25,9 +25,29 @@
     <section class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="presentacion">{{ Lang::get('html.titulo_inicio') }}</h2>
+                <h2>{{ Lang::get('html.titulo_inicio') }}</h2>
             </div>  
         </div>
+
+        <div class="row">
+            <div class="col-md-12 banner">
+                
+            </div>  
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <p>Le proponemos una nueva manera de vivir su casa y su jardín: disfrutándolo, viéndolo crecer, sintiéndolo, percibiendo sus olores, aromas y formas y observando sus cambios constantes.
+                Cuidando cada detalle, pensamos, diseñamos y creamos su espacio en armonía con la totalidad de su entorno.</p>
+                <img src="{{ URL::to('images/firma.gif')}}" />
+            </div> 
+            <div class="col-md-6">
+                <h3>Curso de Paisajismo</h3>
+                <p>El Curso es una aproximación al Paisajismo desde el Diseño y su propuesta consiste en aprender a planificar un espacio. Pensarlo, soñarlo y después, con las herramientas aprendidas diseñarlo.</p>
+                <a href="" class="links">Más info</a> | <a href="" class="links">Consultas</a> | <a href="http://www.facebook.com/profile.php?id=100002159523290&ref=ts" target="_blank" class="links">Novedades en Facebook</a>
+            </div> 
+        </div>
+
         @if(count($items_home) > 0)
         <div class="row carrouselProdHome carousel-oculto">
             <div id="owl-demo-prod">

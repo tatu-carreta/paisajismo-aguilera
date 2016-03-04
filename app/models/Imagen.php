@@ -352,7 +352,7 @@ class Imagen extends Eloquent {
             $filename = $filename . ".{$extension}";
         }
 
-        Image::make($imagen_slide)->resize(570, null, function ($constraint) {
+        Image::make($imagen_slide)->resize(null, 340, function ($constraint) {
             $constraint->aspectRatio();
             $constraint->upsize();
         })->save($directory . $filename);

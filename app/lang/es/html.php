@@ -8,7 +8,7 @@ return array(
       |
      */
     'head' => array(
-        'title' => 'Paisajismo Aguilera',
+        'title' => 'Patricia Aguilera Paisajismo',
         'description' => '',
         'keywords' => '',
     ),

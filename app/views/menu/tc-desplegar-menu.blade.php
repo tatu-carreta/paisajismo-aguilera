@@ -16,6 +16,7 @@
         <div class="collapse navbar-collapse navbar-ex1-collapse divMenu">
             <ul class="nav navbar-nav" id="menuPrincipal">
                 @foreach($menus as $m)
+                    @if($m->id != 9)
                     @if(count($m->children) > 0)
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{$m->lang()->nombre}} <b class="caret"></b></a>
@@ -34,6 +35,7 @@
                     @else
                         <li>
                             <a href="{{URL::to($prefijo.'/'.$m->lang()->url)}}" class="btn1">{{$m->lang()->nombre}}</a>
+                    @endif
                     @endif
                     </li>
                 @endforeach

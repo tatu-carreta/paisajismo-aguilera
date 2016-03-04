@@ -75,14 +75,12 @@
         @endif
         <div class="row">
             <div class="col-md-12">
-                <div class="flexslider">
-                    <ul class="slides">
-                        @foreach($s->imagenes as $img)
-                            <li>
-                                <img alt="{{$s->nombre}}" src="{{ URL::to($img->carpeta.$img->nombre) }}">
-                            </li>
-                        @endforeach
-                    </ul>
+                <div id="owl-slide" class="owl-carousel owl-theme">
+                    @foreach($s->imagenes as $img)
+                    <div class="item">
+                        <img alt="{{$s->nombre}}" src="{{ URL::to($img->carpeta.$img->nombre) }}">
+                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>

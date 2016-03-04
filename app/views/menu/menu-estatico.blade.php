@@ -4,7 +4,8 @@
     @if(Auth::check())
         <script src="{{URL::to('js/popupFuncs.js')}}"></script>
     @endif
-    <section class="container">
+    <section class="container cuerpoColor">
+        <a href="{{URL::to('lo-que-nos-proponemos')}}"><span>Takano</span></a>
         <div class="row">
             <div class="col-md-12 marginBottom2">
                 <h2>{{ $menu_basic->lang()->nombre }}</h2>
@@ -65,4 +66,15 @@
             </div>
         @endif
     </section>
+    <!-- Include OWL CARROUSEL -->
+    <script src="{{URL::to('js/owl.carousel.js')}}"></script>
+    <script>
+        $("#owl-slide").owlCarousel({
+            autoPlay: 3000,
+            slideSpeed : 300,
+            paginationSpeed : 400,
+            singleItem:true,
+            transitionStyle : "fade"
+        });
+    </script>
 @stop

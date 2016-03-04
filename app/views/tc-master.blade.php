@@ -20,12 +20,10 @@
         
         <link rel="stylesheet" type="text/css" href="{{URL::to('css/jquery-ui.min.css')}}">
         <link rel="stylesheet" href="{{URL::to('font-awesome-4.2.0/css/font-awesome.min.css')}}">
-        <!-- <link rel="stylesheet" href="{{URL::to('css/flexslider.css')}}">-->
+
         <link rel="stylesheet" href="{{URL::to('css/owl.carousel.css')}}">
         <link rel="stylesheet" href="{{URL::to('css/owl.theme.css')}}">
-        <link rel="stylesheet" href="{{URL::to('source/jquery.fancybox.css')}}">
-        <!--<link rel="stylesheet" type="text/css" href="{{URL::to('css/styleSlideHome.css')}}" />-->
-        <!--<link rel="stylesheet" type="text/css" href="{{URL::to('css/base.css')}}">-->
+        <link rel="stylesheet" href="{{URL::to('css/owl.transitions.css')}}">
         <link rel="stylesheet" type="text/css" href="{{URL::to('css/base_2.css')}}"> 
         <link rel="stylesheet" type="text/css" href="{{URL::to('css/styles.css')}}">
         
@@ -39,26 +37,6 @@
 
         <!-- Latest compiled and minified JavaScript -->
         <script src="{{URL::to('bootstrap-3.3.4-dist/js/bootstrap.min.js')}}"></script>
-        
-        <!-- Include Fancybox -->
-        <script src="{{URL::to('source/jquery.fancybox.js')}}"></script>
-        <script type="text/javascript">
-            $(document).ready(function() {
-                $(".fancybox").fancybox();
-            });
-        </script>
-
-        <!-- Include MyTooltips -->
-        <script src="{{URL::to('js/jquery.style-my-tooltips.js')}}"></script>
-        <script type="text/javascript">  
-            $().ready(function() {  
-                //applies to all elements with title attribute. Change to ".class[title]" to select only elements with specific .class and title
-                $("[title]").style_my_tooltips({ 
-                    tip_follows_cursor: "on", //on/off
-                    tip_delay_time: 10 //milliseconds
-                });  
-            });  
-        </script>
         @show
     </head>
     <body>

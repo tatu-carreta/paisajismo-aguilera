@@ -46,12 +46,14 @@
             @endif
         @endif
 
+        <div class="row">
         @foreach($menu_basic -> secciones as $seccion)
             @if((count($seccion->items) > 0) || (count($seccion->slides) > 0))
                 @include('seccion.seccion-estatica')
             @endif
         @endforeach
-
+        </div>
+        
         <div class="clearfix"></div>
         @if(Auth::check())
             <div class="modal fade" id="nueva-seccion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

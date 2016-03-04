@@ -1,11 +1,12 @@
-body {background-color: #000; color: #fff; font-family: 'Alegreya Sans', sans-serif;}
+body {background-color: #000; color: #fff; font-family: 'Alegreya Sans', sans-serif; font-size: 16px;}
 h1, h2, h3 {font-weight: 400}
+.links {}
 
 .logo span {display:none}
 .divMenu {float: none}
 #menuPrincipal {width: 100%; text-align: justify;
 	&:after{content: "."; display: inline-block; width: 100%; height: 0; visibility: hidden;}
-    li:after {content: "."; width:1px; height: 30px; background: #fff;}
+    li:after {content: " "; width:1px; height: 30px; background: #fff;}
 	a {font-size: 1.32em; height: 30px; line-height: 30px; padding: 0 10px !important; text-transform: none;
         &:hover {background: #8aa62d}
         }
@@ -20,6 +21,14 @@ a.facebook {width: 41px; height: 42px; display: block; float: right; background-
 .navbar-nav>li {float: none; display: inline-block;}
 
 .banner {min-height: 350px; background: #666; margin-bottom: 2em; }
+.presentacion{ padding-right: 2em; border-right:1px solid #fff; font-size: 1.2em;
+    img {display: inline-block; float: right; padding-right: 2em}
+}
+.curso {padding-left: 2em;
+    a {color: #8AA62D;text-decoration: none;
+        &:hover {text-decoration: underline !important;}
+    }
+}
 
 footer {padding-top: 5px; margin: 40px 0px 50px 0px; letter-spacing: 1px; color: #999; font-size: 16px;
 	a {color: #999;}

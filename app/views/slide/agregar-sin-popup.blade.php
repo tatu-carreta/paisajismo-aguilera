@@ -8,7 +8,7 @@
             <!-- Abre columna de imágenes -->
             <div class="col-md-8 cargaImg">
                 <div class="fondoDestacado">
-                    <input type="hidden" ng-model="total_permitido" ng-init="total_permitido = 4">
+                    <input type="hidden" ng-model="total_permitido" ng-init="total_permitido = {{ $total_permitido }}">
                     @include('imagen.modulo-galeria-angular')
                 </div>
             </div>

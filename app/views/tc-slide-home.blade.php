@@ -21,7 +21,7 @@
     @else
         <div class="row">
             <div class="col-md-12">
-                <a class="btn pull-right iconoBtn-texto" href="{{URL::to('admin/slide/agregar/5/I')}}"> <i class="fa fa-pencil fa-lg"></i>Agregar Slide Home</a>
+                <a class="btn pull-right iconoBtn-texto" href="{{URL::to('admin/slide/agregar/1/I')}}"> <i class="fa fa-pencil fa-lg"></i>Agregar Slide Home</a>
             </div>
         </div>
     @endif
@@ -38,9 +38,14 @@
                                 <div class="flechaSlide"></div>
                                 <img src="{{ URL::to($img->carpeta.$img->nombre) }}" />
                             </div>
+                            <?php
+                                /*
                             <div class="flex-caption">
                                 <p>{{ $img->lang()->epigrafe }}</p>
                             </div>
+                                 * 
+                                 */
+                            ?>
                             <div class="clearfix"></div>
                         </li>
                     @endforeach

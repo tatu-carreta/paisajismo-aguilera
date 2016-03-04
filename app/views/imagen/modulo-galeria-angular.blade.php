@@ -47,9 +47,11 @@
                                 </div>
                                 <!-- <i ng-click="removeItem(item)" class="fa fa-times-circle fa-lg"></i> -->
                             </div>
+                            <!--
                             <div class="divCargaTxtSlideHome">
                                 <textarea class="form-control" id="epigrafe" name="epigrafe_slide[]" maxlength="150"></textarea>
                             </div>
+                            -->
                             <div class="clearfix marginBottom1"></div>
                             <div class="progreso">
                                 <div class="progress marginBottom1">

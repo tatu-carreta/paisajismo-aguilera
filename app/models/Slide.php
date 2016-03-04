@@ -45,10 +45,17 @@ class Slide extends Eloquent {
                 if (is_array($input['file'])) {
                     foreach ($input['file'] as $key => $imagen) {
                         if ($imagen != "") {
-                            if ($input['tipo'] == "I") {
-                                $imagen_creada = Imagen::agregarImagenSlideHome($imagen, $input['epigrafe'][$key]);
+
+                            if (isset($input['epigrafe'][$key]) && ($input['epigrafe'][$key] != "")) {
+                                $ep_im = $input['epigrafe'][$key];
                             } else {
-                                $imagen_creada = Imagen::agregarImagen($imagen, $input['epigrafe'][$key]);
+                                $ep_im = "";
+                            }
+
+                            if ($input['tipo'] == "I") {
+                                $imagen_creada = Imagen::agregarImagenSlideHome($imagen, $ep_im);
+                            } else {
+                                $imagen_creada = Imagen::agregarImagenAngularSlideHome($imagen, $ep_im);
                             }
 
                             if (!$imagen_creada['error']) {
@@ -110,10 +117,17 @@ class Slide extends Eloquent {
                 if (is_array($input['imagenes_slide'])) {
                     foreach ($input['imagenes_slide'] as $key => $imagen) {
                         if ($imagen != "") {
-                            if ($input['tipo'] == "I") {
-                                $imagen_creada = Imagen::agregarImagenAngularSlideHome($imagen, $input['epigrafe_slide'][$key]);
+                            
+                            if (isset($input['epigrafe'][$key]) && ($input['epigrafe'][$key] != "")) {
+                                $ep_im = $input['epigrafe'][$key];
                             } else {
-                                $imagen_creada = Imagen::agregarImagen($imagen, $input['epigrafe_slide'][$key]);
+                                $ep_im = "";
+                            }
+                            
+                            if ($input['tipo'] == "I") {
+                                $imagen_creada = Imagen::agregarImagenAngularSlideHome($imagen, $ep_im);
+                            } else {
+                                $imagen_creada = Imagen::agregarImagenAngularSlideHome($imagen, $ep_im);
                             }
 
                             if (!$imagen_creada['error']) {
@@ -170,7 +184,14 @@ class Slide extends Eloquent {
                 if (is_array($input['imagenes_slide'])) {
                     foreach ($input['imagenes_slide'] as $key => $imagen) {
                         if ($imagen != "") {
-                            $imagen_creada = Imagen::agregarImagenAngularSlideHome($imagen, $input['epigrafe_slide'][$key]);
+                            
+                            if (isset($input['epigrafe'][$key]) && ($input['epigrafe'][$key] != "")) {
+                                $ep_im = $input['epigrafe'][$key];
+                            } else {
+                                $ep_im = "";
+                            }
+                            
+                            $imagen_creada = Imagen::agregarImagenAngularSlideHome($imagen, $ep_im);
 
                             if (!$imagen_creada['error']) {
 
@@ -192,9 +213,15 @@ class Slide extends Eloquent {
                     foreach ($input['imagen_slide_editar'] as $key => $imagen) {
                         if ($imagen != "") {
 
+                            if (isset($input['epigrafe_imagen_slide_editar'][$key]) && ($input['epigrafe_imagen_slide_editar'][$key] != "")) {
+                                $ep_im = $input['epigrafe_imagen_slide_editar'][$key];
+                            } else {
+                                $ep_im = "";
+                            }
+                            
                             $info = array(
                                 'id' => $imagen,
-                                'epigrafe' => $input['epigrafe_imagen_slide_editar'][$key]
+                                'epigrafe' => $ep_im
                             );
 
                             $imagen_creada = Imagen::editar($info);

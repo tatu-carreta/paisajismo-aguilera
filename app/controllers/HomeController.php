@@ -3,6 +3,7 @@
 class HomeController extends BaseController {
 
     public function inicio() {
+        /*
         $items_home = array();
         $destacados = array();
 
@@ -61,12 +62,13 @@ class HomeController extends BaseController {
           $ultimos_productos = NULL;
           }
          * 
-         */
+         
 
         //$this->array_view['items_nuevos'] = $items_nuevos;
         $this->array_view['slide_index'] = $slideIndex;
         //$this->array_view['ultimos_productos'] = $ultimos_productos;
         $this->array_view['items_home'] = $items_home;
+        */
 
         return View::make($this->project_name . '-inicio', $this->array_view);
     }

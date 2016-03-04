@@ -29,7 +29,7 @@
             <div class="row">
                 <div class="col-md-12 fondoDestacado text-center menuInsertContenido">       
                     @if(Auth::user()->can("agregar_slide"))
-                       <a href="{{URL::to('admin/slide/agregar/'.$menu_basic->id.'/E')}}" class="btn btn-primary popup-nueva-seccion">Agregar slide</a>
+                       <a href="{{URL::to('admin/slide/agregar/'.$menu_basic->id.'/E')}}" class="btn btn-primary">Agregar slide</a>
                     @endif
                     @if(Auth::user()->can("agregar_galeria"))
                         <a href="{{URL::to('admin/galeria/agregar/'.$menu_basic->id)}}" class="btn btn-primary popup-nueva-seccion">Agregar galería</a>

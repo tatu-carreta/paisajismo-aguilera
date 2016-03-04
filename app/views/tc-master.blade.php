@@ -147,6 +147,8 @@
                     </div>
                 </div>
             </header>  
+            <?php
+                            /*
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ Lang::get('locales.label') }} <b class="caret"></b></a>
                 <ul class="dropdown-menu">
@@ -155,6 +157,9 @@
                     @endforeach
                 </ul>
             </li>
+                             * 
+                             */
+            ?>
 
             @yield('slide-estatico') 
 

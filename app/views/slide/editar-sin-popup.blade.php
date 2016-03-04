@@ -10,7 +10,7 @@
                 <div class="col-md-8 cargaImg">
                     <h4>Cargar imagen nueva</h4>
                     <div class="fondoDestacado">
-                        <input type="hidden" ng-model="total_permitido" ng-init="total_permitido = @if(count($slide->imagenes) > 0){{4-count($slide->imagenes)}}@else 4 @endif">
+                        <input type="hidden" ng-model="total_permitido" ng-init="total_permitido = @if(count($slide->imagenes) > 0){{1-count($slide->imagenes)}}@else 1 @endif">
                         @include('imagen.modulo-galeria-angular')
                     </div>
 
@@ -26,11 +26,16 @@
                                            <div class="divCargaImgSlideHome">
                                                <input type="hidden" name="imagen_slide_editar[]" value="{{$img->id}}">
                                                <img src="{{ URL::to($img->carpeta.$img->nombre) }}" alt="{{$slide->titulo}}">
-                                                <i onclick="borrarImagenReload('{{ URL::to('admin/imagen/borrar') }}', '{{$img->id}}');" class="fa fa-times-circle fa-lg"></i>
+                                                <i onclick="borrarImagenReload('{{ URL::to('admin/imagen/borrar') }}', '{{$img->id}}');" class="fa fa-times-circle fa-lg">borrar</i>
                                             </div>
+                                             <?php
+                                             /*
                                             <div class="divCargaTxtSlideHome">
                                               <textarea class="form-control" name="epigrafe_imagen_slide_editar[]" maxlength="150">{{$img->epigrafe}}</textarea>
                                             </div>
+                                              * 
+                                              */
+                                             ?>
                                             <div class="clearfix"></div>
                                          </div>
                                      </div>

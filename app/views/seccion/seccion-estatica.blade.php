@@ -4,7 +4,7 @@
 
         @if(Auth::check())
             <div class="row pull-right">
-                <div class="col-md-12">
+                <div class="col-md-6">
                 @if(!is_null($i->texto()))
                     @if(Auth::user()->can("editar_texto"))
                             <a href="{{URL::to($prefijo.'/admin/texto/editar/'.$i->id)}}" class="btn popup-nueva-seccion iconoBtn-texto"><i class="fa fa-pencil fa-lg"></i>editar</a>
@@ -33,7 +33,7 @@
 
         <div class="clearfix"></div>
         <div class="row">
-            <div class="col-md-12 divCuerpoTxt">
+            <div class="col-md-6 divCuerpoTxt">
         @if(!is_null($i->lang()->titulo) && ($i->lang()->titulo != ""))
             <h2>{{$i->lang()->titulo}}</h2>
         @endif
@@ -52,36 +52,43 @@
 
         <!-- Galeria de Imagenes -->
         @if(count($i->imagenes) > 0)
-            <div class="galeria">
-                @foreach($i->imagenes as $img)
-                    <a class="fancybox" rel="group{{$i->id}}" href="{{ URL::to($img->ampliada()->carpeta.$img->ampliada()->nombre) }}" title="{{ $img->ampliada()->lang()->epigrafe }}" target="_blank"><img class="lazy" data-original="{{ URL::to($img->carpeta.$img->nombre) }}"></a>
-                @endforeach
+        <div class="row">
+            <div class="col-md-6">
+                <div class="galeria">
+                    @foreach($i->imagenes as $img)
+                        <a class="fancybox" rel="group{{$i->id}}" href="{{ URL::to($img->ampliada()->carpeta.$img->ampliada()->nombre) }}" title="{{ $img->ampliada()->lang()->epigrafe }}" target="_blank"><img class="lazy" data-original="{{ URL::to($img->carpeta.$img->nombre) }}"></a>
+                    @endforeach
+                </div>
             </div>
+        </div>
         @endif
     @endforeach
 
     <!-- INICIO DE SLIDE -->
 
     @foreach($seccion -> slides as $s)
-        <div class="flexslider">
-            <ul class="slides">
-                @foreach($s->imagenes as $img)
-                    <li>
-                        <img alt="{{$s->nombre}}" src="{{ URL::to($img->carpeta.$img->nombre) }}">
-                        <p class="flex-caption">{{$img->epigrafe}}</p>
-                    </li>
-                @endforeach
-            </ul>
-        </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="flexslider">
+                <ul class="slides">
+                    @foreach($s->imagenes as $img)
+                        <li>
+                            <img alt="{{$s->nombre}}" src="{{ URL::to($img->carpeta.$img->nombre) }}">
+                        </li>
+                    @endforeach
+                </ul>
+            </div>
 
-        @if(Auth::check())
-            @if(Auth::user()->can("editar_slide"))
-                <a href="../slide/editar-slide/{{$s->id}}" class="btn btn-lg btn-primary">Editar Slide</a>
+            @if(Auth::check())
+                @if(Auth::user()->can("editar_slide"))
+                    <a href="../slide/editar-slide/{{$s->id}}" class="btn btn-lg btn-primary">Editar Slide</a>
+                @endif
+                @if(Auth::user()->can("borrar_slide"))
+                    <a href="#" onclick="borrarData('../admin/seccion/borrar', '{{$seccion->id}}');" class="col-lg-3 btn btn-lg btn-danger">Borrar Sección</a>
+                @endif
             @endif
-            @if(Auth::user()->can("borrar_slide"))
-                <a href="#" onclick="borrarData('../admin/seccion/borrar', '{{$seccion->id}}');" class="col-lg-3 btn btn-lg btn-danger">Borrar Sección</a>
-            @endif
-        @endif
+        </div>
+    </div>
     @endforeach
 
 </div>

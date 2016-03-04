@@ -15,7 +15,15 @@ class SlideController extends BaseController {
         $this->array_view['seccion_id'] = $seccion['data']->id;
         $this->array_view['tipo'] = $tipo;
 
-        return View::make($this->folder_name . '.agregar-sin-popup', $this->array_view);
+        if ($tipo == 'I') {
+            $this->array_view['total_permitido'] = 1;
+            $name_arch = 'agregar-sin-popup';
+        } else {
+            $this->array_view['total_permitido'] = 10;
+            $name_arch = 'agregar-sin-popup';
+        }
+
+        return View::make($this->folder_name . '.' . $name_arch, $this->array_view);
     }
 
     public function agregar() {
@@ -42,7 +50,7 @@ class SlideController extends BaseController {
         $this->array_view['continue'] = $next;
 
         return View::make($this->folder_name . '.editar-sin-popup', $this->array_view);
-}
+    }
 
     public function editar() {
 
@@ -54,8 +62,8 @@ class SlideController extends BaseController {
             return Redirect::to('admin/slide/editar/' . Input::get('slide_id') . '/' . Input::get('continue'))->with('mensaje', $respuesta['mensaje'])->with('error', true);
         } else {
 
-            $anclaProd = '#Pr' . $respuesta['data']->id.$respuesta['data']->tipo;
-            
+            $anclaProd = '#Pr' . $respuesta['data']->id . $respuesta['data']->tipo;
+
             return Redirect::to('/')->with('mensaje', $respuesta['mensaje'])->with('ok', true)->with('anclaProd', $anclaProd);
         }
     }

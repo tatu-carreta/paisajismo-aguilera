@@ -1,7 +1,7 @@
 @extends($project_name.'-master')
 
 @section('contenido')
-<section class="container">
+<section class="container cuerpoColor">
     <div class="row">
         <div class="col-md-12 marginBottom2">
             <h2>{{ Lang::get('html.contacto.titulo_contacto') }}</h2>

@@ -65,7 +65,7 @@
         <div class="row pull-right">
             <div class="col-md-12">
             @if(Auth::user()->can("editar_slide"))
-                <a class="btniconoBtn-texto" href="{{URL::to('admin/slide/editar/'.$s->id.'/seccion')}}"> <i class="fa fa-pencil fa-lg"></i>editar</a>
+                <a class="btniconoBtn-texto" href="{{URL::to('admin/slide/editar/'.$s->id.'/seccion/E')}}"> <i class="fa fa-pencil fa-lg"></i>editar</a>
             @endif
             @if(Auth::user()->can("borrar_slide"))
                 <a onclick="borrarData('{{URL::to('admin/seccion/borrar')}}', '{{$seccion->id}}');" class="btn sinPadding iconoBtn-texto"><i class="fa fa-times fa-lg"></i>eliminar</a>

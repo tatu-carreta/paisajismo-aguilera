@@ -2,7 +2,7 @@
 
 @section('contenido')
 <section class="container"  id="ng-app" ng-app="app">
-<h2 class="marginBottom2"><span>Editar slide de home</span></h2>
+<h2 class="marginBottom2"><span>Editar slide @if($tipo == 'I')de home @endif</span></h2>
     {{ Form::open(array('url' => 'admin/slide/editar')) }}
 
         <div class="row marginBottom2">
@@ -10,7 +10,7 @@
                 <div class="col-md-8 cargaImg">
                     <h4>Cargar imagen nueva</h4>
                     <div class="fondoDestacado">
-                        <input type="hidden" ng-model="total_permitido" ng-init="total_permitido = @if(count($slide->imagenes) > 0){{1-count($slide->imagenes)}}@else 1 @endif">
+                        <input type="hidden" ng-model="total_permitido" ng-init="total_permitido = {{ $total_permitido }}">
                         @include('imagen.modulo-galeria-angular')
                     </div>
 

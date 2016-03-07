@@ -35,19 +35,32 @@ class SlideController extends BaseController {
         if ($respuesta['error'] == true) {
             return Redirect::to('admin/slide/agregar/' . $menu_id . '/' . $tipo)->with('mensaje', $respuesta['mensaje'])->with('error', true);
         } else {
-            $menu = $respuesta['data']->seccion->menuSeccion()->url;
-            $ancla = '#' . $respuesta['data']->seccion->estado . $respuesta['data']->seccion->id;
 
-            //return Redirect::to('/' . $menu)->with('mensaje', $respuesta['mensaje'])->with('ancla', $ancla)->with('ok', true);
-            return Redirect::to('/')->with('mensaje', $respuesta['mensaje'])->with('ok', true);
+            if (Input::get('tipo') == 'I') {
+                return Redirect::to('/')->with('mensaje', $respuesta['mensaje'])->with('ok', true);
+            } else {
+                $menu = $respuesta['data']->seccion->menuSeccion()->lang()->url;
+                $ancla = '#' . $respuesta['data']->seccion->estado . $respuesta['data']->seccion->id;
+
+                return Redirect::to('/' . $menu)->with('mensaje', $respuesta['mensaje'])->with('ancla', $ancla)->with('ok', true);
+            }
+            //
         }
     }
 
-    public function vistaEditar($id, $next) {
+    public function vistaEditar($id, $next, $tipo) {
         $slide = Slide::find($id);
 
         $this->array_view['slide'] = $slide;
         $this->array_view['continue'] = $next;
+        
+        $this->array_view['tipo'] = $tipo;
+
+        if ($tipo == 'I') {
+            $this->array_view['total_permitido'] = 1;
+        } else {
+            $this->array_view['total_permitido'] = 10;
+        }
 
         return View::make($this->folder_name . '.editar-sin-popup', $this->array_view);
     }
@@ -62,9 +75,16 @@ class SlideController extends BaseController {
             return Redirect::to('admin/slide/editar/' . Input::get('slide_id') . '/' . Input::get('continue'))->with('mensaje', $respuesta['mensaje'])->with('error', true);
         } else {
 
-            $anclaProd = '#Pr' . $respuesta['data']->id . $respuesta['data']->tipo;
+            if (Input::get('continue') == 'seccion') {
+                $menu = $respuesta['data']->seccion->menuSeccion()->lang()->url;
+                $ancla = '#' . $respuesta['data']->seccion->estado . $respuesta['data']->seccion->id;
 
-            return Redirect::to('/')->with('mensaje', $respuesta['mensaje'])->with('ok', true)->with('anclaProd', $anclaProd);
+                return Redirect::to('/' . $menu)->with('mensaje', $respuesta['mensaje'])->with('ancla', $ancla)->with('ok', true);
+            } else {
+                $anclaProd = '#Pr' . $respuesta['data']->id . $respuesta['data']->tipo;
+
+                return Redirect::to('/')->with('mensaje', $respuesta['mensaje'])->with('ok', true)->with('anclaProd', $anclaProd);
+            }
         }
     }
 

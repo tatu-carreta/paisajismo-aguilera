@@ -34,7 +34,7 @@
                     <input type="hidden" ng-model="url_public" ng-init="url_public = '{{URL::to('/')}}'">
                 </div>
             </div>
-            <p class="infoTxt"><i class="fa fa-info-circle"></i>El slide puede tener hasta 4 imágenes. Las imágenes deben ser horizontales y medir <strong>600px de ancho por 360px de alto.<strong></p>
+            <p class="infoTxt"><i class="fa fa-info-circle"></i>El slide puede tener hasta <% total_permitido %> imágenes. Las imágenes deben ser horizontales y medir <strong>600px de ancho por 360px de alto.<strong></p>
             <div>
                
                  

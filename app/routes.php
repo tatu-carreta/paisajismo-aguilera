@@ -50,7 +50,7 @@ Route::group(array('prefix' => Config::get('app.locale_prefix')), function() {
     Route::get('seccion/{id}', 'SeccionController@mostrarInfoSeccion');
 
 //Ruteo de Categoría
-    Route::get('jma-error', 'HomeController@error');
+    Route::get('tc-error', 'HomeController@error');
 
 //Ruteo de Producto
     Route::get('producto/{url}', 'ProductoController@mostrarInfoProducto');
@@ -220,7 +220,7 @@ Route::group(array('prefix' => Config::get('app.locale_prefix')), function() {
 
         Route::post('admin/slide/agregar', 'SlideController@agregar');
 
-        Route::get('admin/slide/editar/{id}/{next}', 'SlideController@vistaEditar');
+        Route::get('admin/slide/editar/{id}/{next}/{tipo}', 'SlideController@vistaEditar');
 
         Route::post('admin/slide/editar', 'SlideController@editar');
 

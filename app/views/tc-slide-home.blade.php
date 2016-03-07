@@ -15,7 +15,7 @@
     @if (!is_null($slide_index) && !is_null($slide_index -> imagenes))
         <div class="row">
             <div class="col-md-12">
-                <a class="btn pull-right iconoBtn-texto" href="{{URL::to('admin/slide/editar/'.$slide_index->id.'/home')}}"> <i class="fa fa-pencil fa-lg"></i>Editar Slide Home</a>
+                <a class="btn pull-right iconoBtn-texto" href="{{URL::to('admin/slide/editar/'.$slide_index->id.'/home/I')}}"> <i class="fa fa-pencil fa-lg"></i>Editar Slide Home</a>
             </div>
         </div>
     @else

@@ -55,7 +55,7 @@ Route::filter('superadmin', function() {
                     if (Request::ajax()) {
                         return Response::json(['mensaje' => 'Usted no tiene permiso para realizar esta acción.', 'error' => true]);
                     } else {
-                        return Redirect::to('jma-error')->with('texto', 'Usted no tiene permiso para esa sección.');
+                        return Redirect::to('tc-error')->with('texto', 'Usted no tiene permiso para esa sección.');
                     }
                 }
             }

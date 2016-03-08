@@ -7,6 +7,15 @@ body {
 h1, h2, h3 {
   font-weight: 400;
 }
+label {
+  font-weight: 500;
+}
+.btn {
+  background: #a378ce;
+}
+textarea.form-control {
+  height: 10em;
+}
 .logo span {
   display: none;
 }
@@ -89,8 +98,26 @@ a.facebook span {
   text-decoration: underline !important;
 }
 .cuerpoColor {
-  background: #d3cadc;
-  background-image: url(../images/fondo-verano.jpg);
+  background: #d3cadc url(../images/fondo-verano.jpg) no-repeat top left;
+  padding: 12em 3em 3em;
+  color: #000;
+  position: relative;
+}
+.cuerpoColor h2 {
+  color: #6d8323;
+  font-size: 30px;
+}
+a.takano {
+  display: block;
+  height: 105px;
+  width: 123px;
+  background-image: url(../images/btn-takano.png);
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+a.takano span {
+  display: none;
 }
 footer {
   padding-top: 5px;

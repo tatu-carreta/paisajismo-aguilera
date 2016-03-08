@@ -6614,3 +6614,23 @@ Stack trace:
 #24 C:\xampp\htdocs\paisajismo-aguilera\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(641): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
 #25 C:\xampp\htdocs\paisajismo-aguilera\public\index.php(50): Illuminate\Foundation\Application->run()
 #26 {main} [] []
+[2016-03-04 16:38:28] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected end of file' in C:\xampp\htdocs\paisajismo-aguilera\app\storage\views\c21596d575191a1ca930f77eae20215b:132
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2016-03-04 16:38:48] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected end of file' in C:\xampp\htdocs\paisajismo-aguilera\app\storage\views\c21596d575191a1ca930f77eae20215b:132
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2016-03-04 17:13:08] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected end of file' in C:\xampp\htdocs\paisajismo-aguilera\app\storage\views\c21596d575191a1ca930f77eae20215b:132
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2016-03-04 17:18:03] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected end of file' in C:\xampp\htdocs\paisajismo-aguilera\app\storage\views\c21596d575191a1ca930f77eae20215b:132
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2016-03-04 17:27:29] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected end of file' in C:\xampp\htdocs\paisajismo-aguilera\app\storage\views\c21596d575191a1ca930f77eae20215b:132
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []

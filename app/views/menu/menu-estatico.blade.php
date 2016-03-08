@@ -5,7 +5,7 @@
         <script src="{{URL::to('js/popupFuncs.js')}}"></script>
     @endif
     <section class="container cuerpoColor">
-        <a href="{{URL::to('lo-que-nos-proponemos')}}"><span>Takano</span></a>
+        <a href="{{URL::to('lo-que-nos-proponemos')}}" class="takano"><span>Takano</span></a>
         <div class="row">
             <div class="col-md-12 marginBottom2">
                 <h2>{{ $menu_basic->lang()->nombre }}</h2>

@@ -2,16 +2,18 @@
 
 @section('contenido')
 <section class="container cuerpoColor">
+    <a href="{{URL::to('lo-que-nos-proponemos')}}" class="takano"><span>Takano</span></a>
     <div class="row">
         <div class="col-md-12 marginBottom2">
             <h2>{{ Lang::get('html.contacto.titulo_contacto') }}</h2>
+            <p>Si desea realizar cualquier consulta puede comunicarse con nosotros por teléfono, por e-mail o completando el siguiente formulario. Le responderemos a la brevedad.</p>
         </div>
     </div>
     <div class="clearfix"></div>
     <div class="row ">
         <div class="col-md-6">
             <div class="col-contacto">
-                <h3>{{ Lang::get('html.contacto.consultas') }}</h3>
+                <!-- <h3>{{ Lang::get('html.contacto.consultas') }}</h3> -->
                 <div class="formulario">
                     {{Form::open(array('url' => 'consulta', 'class' => 'borde'))}}
                         <div class="form-group">

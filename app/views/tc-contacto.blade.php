@@ -9,7 +9,6 @@
             <p>Si desea realizar cualquier consulta puede comunicarse con nosotros por teléfono, por e-mail o completando el siguiente formulario. Le responderemos a la brevedad.</p>
         </div>
     </div>
-    <div class="clearfix"></div>
     <div class="row ">
         <div class="col-md-6">
             <div class="col-contacto">

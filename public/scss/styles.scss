@@ -36,7 +36,7 @@ a.facebook {width: 41px; height: 42px; display: block; float: right; background-
 }
 
 .cuerpoColor {background: #D3CADC url(../images/fondo-verano.jpg) no-repeat top left; padding: 12em 3em 3em; color:#000; position: relative;
-    h2 {color: #6D8323; font-size: 30px; }
+    h2 {color: #6D8323; font-size: 30px;}
 }
 a.takano {display: block; height: 105px; width: 123px; background-image: url(../images/btn-takano.png); position: absolute; top:1em; right: 1em;
     span {display: none}
@@ -49,6 +49,7 @@ a.takano {display: block; height: 105px; width: 123px; background-image: url(../
     }    
 .colTable {display: table}
 .colCell {display: table-cell; padding-left: 2em;
+    img {margin-bottom: 1em}
     h3 {margin-top: 0; font-size: 22px; color:red;}
     }
 

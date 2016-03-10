@@ -1,7 +1,9 @@
 body {background-color: #000; color: #fff; font-family: 'Alegreya Sans', sans-serif; font-size: 16px;}
 h1, h2, h3 {font-weight: 400}
+section {padding-top: 0}
 label {font-weight: 500}
-.btn {background: #A378CE}
+em {font-family: Georgia, "Times New Roman", Times, serif;}
+/*.btn {background: #A378CE}*/
 textarea.form-control {height: 10em;}
 .links {}
 
@@ -14,7 +16,7 @@ textarea.form-control {height: 10em;}
         &:hover {background: #8aa62d}
         }
 }
-a.facebook {width: 41px; height: 42px; display: block; float: right; background-image: url(../images/facebook.jpg); margin-top: 20px; position: relative; z-index: 100;
+a.facebook {width: 41px; height: 42px; display: block; float: right; background-image: url(../images/facebook.png); margin-top: 20px; position: relative; z-index: 100;
     &:hover {background-position: right top;}
     span {display: none;}
 }
@@ -39,6 +41,16 @@ a.facebook {width: 41px; height: 42px; display: block; float: right; background-
 a.takano {display: block; height: 105px; width: 123px; background-image: url(../images/btn-takano.png); position: absolute; top:1em; right: 1em;
     span {display: none}
 }
+
+.slideInternos {background: url(../images/fondo-galerias.png) no-repeat center top; background-size: 100%; min-height: 420px}
+.owl-item {width: 100%}
+.owl-carousel .owl-wrapper-outer {width: 80%; height: 80%; top: 54px; left: 54px;
+    img {width: 100%; height: auto}
+    }    
+.colTable {display: table}
+.colCell {display: table-cell; padding-left: 2em;
+    h3 {margin-top: 0; font-size: 22px; color:red;}
+    }
 
 footer {padding-top: 5px; margin: 40px 0px 50px 0px; letter-spacing: 1px; color: #999; font-size: 16px;
 	a {color: #999;}

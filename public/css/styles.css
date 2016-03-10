@@ -7,13 +7,16 @@ body {
 h1, h2, h3 {
   font-weight: 400;
 }
+section {
+  padding-top: 0;
+}
 label {
   font-weight: 500;
 }
-.btn {
-  background: #a378ce;
+em {
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
-textarea.form-control {
+/*.btn {background: #A378CE}*/textarea.form-control {
   height: 10em;
 }
 .logo span {
@@ -54,7 +57,7 @@ a.facebook {
   height: 42px;
   display: block;
   float: right;
-  background-image: url(../images/facebook.jpg);
+  background-image: url(../images/facebook.png);
   margin-top: 20px;
   position: relative;
   z-index: 100;
@@ -118,6 +121,30 @@ a.takano {
 }
 a.takano span {
   display: none;
+}
+.slideInternos {
+  background: url(../images/fondo-galerias.png) no-repeat center top;
+  background-size: 100%;
+  min-height: 420px;
+}
+.owl-item {
+  width: 100%;
+}
+.owl-carousel .owl-wrapper-outer {
+  width: 80%;
+  height: 80%;
+  top: 54px;
+  left: 54px;
+}
+.owl-carousel .owl-wrapper-outer img {
+  width: 100%;
+  height: auto;
+}
+.colTable {
+  display: table;
+}
+.colCell {
+  display: table-cell;
 }
 footer {
   padding-top: 5px;

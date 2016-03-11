@@ -68,8 +68,8 @@
             @endif
         </div>
     </section>
-    <!-- Include OWL CARROUSEL -->
-    <script src="{{URL::to('js/owl.carousel.js')}}"></script>
+    <!-- Include JQUERY CYCLE -->
+    <script src="{{URL::to('js/jquery.cycle2.js')}}"></script>
     <script>
         $("#owl-slide").owlCarousel({
             autoPlay: 3000,

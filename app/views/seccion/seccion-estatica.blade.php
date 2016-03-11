@@ -75,10 +75,12 @@
         @endif
         <div class="row">
             <div class="col-md-12">
-                <div class="cycle-slideshow slideInternos">
-                    @foreach($s->imagenes as $img)
-                        <img alt="{{$s->nombre}}" src="{{ URL::to($img->carpeta.$img->nombre) }}">
-                    @endforeach
+                <div class="slideInternos">
+                    <div class="cycle-slideshow slideInternoItem">
+                        @foreach($s->imagenes as $img)
+                            <img alt="{{$s->nombre}}" src="{{ URL::to($img->carpeta.$img->nombre) }}">
+                        @endforeach
+                    </div>
                 </div>
             </div>
         </div>

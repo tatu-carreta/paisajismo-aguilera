@@ -12,7 +12,7 @@ return array(
         'description' => '',
         'keywords' => '',
     ),
-    'copyright' => 'Copyright © OFFITEC 2015 - Desarrollo web:',
+    'copyright' => 'Copyright © Patricia Aguilera Paisajismo 2016 - Desarrollo web:',
     'presupuesto' => 'Presupuesto',
     'ventana_producto' => 'El producto fue agregado. <br> Ingrese a PRESUPUESTO<br> para finalizar.',
     'titulo_inicio' => 'Inicio',

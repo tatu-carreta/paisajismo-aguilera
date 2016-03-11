@@ -7,7 +7,7 @@ return array(
       |--------------------------------------------------------------------------
       |
      */
-    'copyright' => 'Copyright © OFFITEC 2015 - Web developers:',
+    'copyright' => 'Copyright © Patricia Aguilera Paisajismo 2016 - Web developers:',
     'presupuesto' => 'Budget',
     'titulo_inicio' => 'Home',
     'oferta' => 'Sale',

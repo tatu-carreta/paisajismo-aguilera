@@ -11,7 +11,7 @@ textarea.form-control {height: 10em;}
 .divMenu {float: none}
 #menuPrincipal {width: 100%; text-align: justify;
 	&:after{content: "."; display: inline-block; width: 100%; height: 0; visibility: hidden;}
-    li:after {content: " "; width:1px; height: 30px; background: #fff;}
+    li:after {content: " "; width:1px; height: 30px; background: #fff; }
 	a {font-size: 1.32em; height: 30px; line-height: 30px; padding: 0 10px !important; text-transform: none;
         &:hover {background: #8aa62d}
         }
@@ -48,8 +48,8 @@ a.takano {display: block; height: 105px; width: 123px; background-image: url(../
     img {width: 100%; height: auto}
     }    
 .colTable {display: table}
-.colCell {display: table-cell; padding-left: 2em;
-    img {margin-bottom: 1em}
+.colCell {display: table-cell; vertical-align:top; padding-left: 2em;
+    img {margin-bottom: 1em; display: inline-block;}
     h3 {margin-top: 0; font-size: 22px; color:red;}
     }
 

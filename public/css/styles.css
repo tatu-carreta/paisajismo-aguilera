@@ -145,6 +145,17 @@ a.takano span {
 }
 .colCell {
   display: table-cell;
+  vertical-align: top;
+  padding-left: 2em;
+}
+.colCell img {
+  margin-bottom: 1em;
+  display: inline-block;
+}
+.colCell h3 {
+  margin-top: 0;
+  font-size: 22px;
+  color: red;
 }
 footer {
   padding-top: 5px;

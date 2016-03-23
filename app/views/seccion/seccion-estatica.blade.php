@@ -1,6 +1,11 @@
 
-<div class="col-md-6">
+
     @foreach($seccion -> items as $i)
+    @if(!is_null($i->html()))
+    <div class="col-md-12">
+    @else
+    <div class="col-md-6">
+    @endif
         @if(Auth::check())
         <div class="row pull-right">
             <div class="col-md-12">
@@ -56,11 +61,13 @@
             </div>
             @endif
         </div>
+    </div>
     @endforeach
 
     <!-- INICIO DE SLIDE -->
 
     @foreach($seccion -> slides as $s)
+    <div class="col-md-6">
         @if(Auth::check())
         <div class="row pull-right">
             <div class="col-md-12">
@@ -84,5 +91,5 @@
                 </div>
             </div>
         </div>
+    </div>
     @endforeach
-</div>

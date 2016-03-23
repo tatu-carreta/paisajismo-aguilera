@@ -37,10 +37,16 @@ em {
   visibility: hidden;
 }
 #menuPrincipal li:after {
-  content: " ";
+  content: "";
+  display: inline;
   width: 1px;
-  height: 30px;
-  background: #fff;
+  height: 40px;
+  background-image: url(../images/separador.gif);
+  background-position: right top;
+  background-repeat: no-repeat;
+  padding-right: 8px !important;
+  position: relative;
+  top: 1px;
 }
 #menuPrincipal a {
   font-size: 1.32em;
@@ -48,6 +54,7 @@ em {
   line-height: 30px;
   padding: 0 10px !important;
   text-transform: none;
+  float: left;
 }
 #menuPrincipal a:hover {
   background: #8aa62d;

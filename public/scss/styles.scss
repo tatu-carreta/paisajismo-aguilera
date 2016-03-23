@@ -42,9 +42,9 @@ a.takano {display: block; height: 105px; width: 123px; background-image: url(../
     span {display: none}
 }
 
-.slideInternos {background: url(../images/fondo-galerias.png) no-repeat center top; background-size: 100%; min-height: 420px}
+.slideInternos {background: url(../images/fondo-galerias.png) no-repeat center top; background-size: 100%; min-height: 420px; position: relative;}
 .owl-item {width: 100%}
-.slideInternoItem {width: 80%; height: 80%; top: 54px; left: 54px;
+.slideInternoItem {width: 80%; height: 80%; top: 54px; left: 48px;
     img {width: 100%; height: auto}
     }   
 .colTable {display: table}
@@ -72,4 +72,6 @@ footer {padding-top: 5px; margin: 40px 0px 50px 0px; letter-spacing: 1px; color:
     /* since 3.1.0 */
     .navbar-collapse.collapse.in {display: block!important;}
     .collapsing {overflow: hidden!important;}
+
+    .slideInternoItem {top: 44px; left: 39px;}
 }

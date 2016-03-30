@@ -48,6 +48,9 @@ em {
   position: relative;
   top: 1px;
 }
+#menuPrincipal li:last-child:after {
+  background-image: none;
+}
 #menuPrincipal a {
   font-size: 1.32em;
   height: 30px;
@@ -181,12 +184,23 @@ footer a:hover {
 footer .copy {
   border-top: 1px solid #666;
 }
+/* M E D I A  Q U E R Y */@media (max-width: 1200px) {
+  #menuPrincipal a {
+    font-size: 1.1em;
+    padding: 0 5px !important;
+  }
+}
 @media (max-width: 991px) {
-  /* since 3.1.0 */  .navbar-header {
+  /* since 3.1.0 */  a.facebook {
+    top: 4px;
+  }
+  .navbar-header {
     float: none;
   }
   .navbar-toggle {
     display: block;
+    border: 1px solid #ddd;
+    border-radius: 1px;
   }
   .navbar-collapse {
     border-top: 1px solid transparent;
@@ -220,5 +234,18 @@ footer .copy {
   .slideInternoItem {
     top: 44px;
     left: 39px;
+  }
+  .presentacion {
+    border: none;
+    padding-right: -15px;
+    margin-bottom: 2em;
+  }
+  .presentacion:after {
+    content: "";
+    clear: both;
+  }
+  .curso {
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }

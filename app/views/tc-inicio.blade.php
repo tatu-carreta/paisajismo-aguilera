@@ -17,19 +17,22 @@
 
 
         <div class="row">
-            <div class="col-md-12 banner">
-                <!-- SLIDE HOME -->
-                @include($project_name.'-slide-home')
+            <div class="col-md-12">
+                <div class="banner">
+                    <!-- SLIDE HOME -->
+                    @include($project_name.'-slide-home')
+                </div>
             </div>  
         </div>
 
         <div class="row">
-            <div class="col-md-7 presentacion">
+            <div class="col-md-7 col-xs-12 presentacion">
                 <p>Le proponemos una nueva manera de vivir su casa y su jardín: disfrutándolo, viéndolo crecer, sintiéndolo, percibiendo sus olores, aromas y formas y observando sus cambios constantes.
                 Cuidando cada detalle, pensamos, diseñamos y creamos su espacio en armonía con la totalidad de su entorno.</p>
                 <img src="{{ URL::to('images/firma.gif')}}" />
+                <div class="clear"></div>
             </div> 
-            <div class="col-md-5 curso">
+            <div class="col-md-5 col-xs-12 curso">
                 <h3>Curso de Paisajismo</h3>
                 <p>El Curso es una aproximación al Paisajismo desde el Diseño y su propuesta consiste en aprender a planificar un espacio. Pensarlo, soñarlo y después, con las herramientas aprendidas diseñarlo.</p>
                 <a href="" class="links">Más info</a> | <a href="" class="links">Consultas</a> | <a href="http://www.facebook.com/profile.php?id=100002159523290&ref=ts" target="_blank" class="links">Novedades en Facebook</a>

@@ -14,7 +14,7 @@ textarea.form-control {height: 10em;}
     li:after {content: ""; display: inline; width: 1px; height: 40px; background-image: url(../images/separador.gif);
     background-position: right top; background-repeat: no-repeat; padding-right: 8px!important; position: relative; top: 1px;}
     li:last-child:after {background-image: none;}
-	a {font-size: 1.32em; height: 30px; line-height: 30px; padding: 0 10px !important; text-transform: none; float:left;
+	a {font-size: 1.32em; height: 30px; line-height: 30px; padding: 0 10px !important; text-transform: none; float:left;position: relative; left: -1px;
         &:hover {background: #8aa62d}
         }
 }
@@ -27,7 +27,7 @@ a.facebook {width: 41px; height: 42px; display: block; float: right; background-
 .navbar-collapse {padding: 0}
 .navbar-nav>li {float: none; display: inline-block;}
 
-.banner {min-height: 350px; background: #666; margin-bottom: 2em; }
+.banner {min-height: 350px; margin-bottom: 2em; }
 .presentacion{ padding-right: 2em; border-right:1px solid #fff; font-size: 1.2em;
     img {display: inline-block; float: right; padding-right: 2em}
 }
@@ -83,7 +83,10 @@ footer {padding-top: 5px; margin: 40px 0px 50px 0px; letter-spacing: 1px; color:
     .navbar-collapse.collapse.in {display: block!important;}
     .collapsing {overflow: hidden!important;}
 
-    .slideInternoItem {top: 44px; left: 39px;}
+    #menuPrincipal li:after {display:none;}
+    #menuPrincipal a {float: none;}
+
+    .slideInternoItem {position:relative; top: 44px; left: 39px;}
 
     .presentacion {border: none; padding-right: -15px; margin-bottom: 2em}
     .presentacion:after {content: ""; clear: both; }

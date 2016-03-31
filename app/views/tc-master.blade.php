@@ -89,7 +89,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <h1 class="logo pull-left"><a href="{{URL::to('/')}}" ><img src="{{ URL::to('images/patricia-aguilera.gif')}}" /><span>Paisajismo Aguilera</span></a></h1>
-                            <a class="facebook" href=""><span>Facebook</span></a>
+                            <a class="facebook" href="https://www.facebook.com/paisajismopatricia.aguilera?ref=ts"><span>Facebook</span></a>
                              <!-- B T N   C A R R I T O -->
                              <?php
                              /*

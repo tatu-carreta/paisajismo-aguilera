@@ -58,6 +58,8 @@ em {
   padding: 0 10px !important;
   text-transform: none;
   float: left;
+  position: relative;
+  left: -1px;
 }
 #menuPrincipal a:hover {
   background: #8aa62d;
@@ -231,7 +233,14 @@ footer .copy {
   .collapsing {
     overflow: hidden !important;
   }
+  #menuPrincipal li:after {
+    display: none;
+  }
+  #menuPrincipal a {
+    float: none;
+  }
   .slideInternoItem {
+    position: relative;
     top: 44px;
     left: 39px;
   }

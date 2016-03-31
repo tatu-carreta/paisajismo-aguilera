@@ -19,6 +19,9 @@ em {
 /*.btn {background: #A378CE}*/textarea.form-control {
   height: 10em;
 }
+.logo .imgLogoResp {
+  display: none;
+}
 .logo span {
   display: none;
 }
@@ -89,7 +92,6 @@ a.facebook span {
 }
 .banner {
   min-height: 350px;
-  background: #666;
   margin-bottom: 2em;
 }
 .presentacion {
@@ -185,8 +187,12 @@ footer a:hover {
 }
 footer .copy {
   border-top: 1px solid #666;
+  padding-top: 15px;
 }
-/* M E D I A  Q U E R Y */@media (max-width: 1200px) {
+footer .copy p {
+  margin: 0;
+}
+/* A D M I N *//* M E D I A  Q U E R Y */@media (max-width: 1200px) {
   #menuPrincipal a {
     font-size: 1.1em;
     padding: 0 5px !important;
@@ -201,7 +207,7 @@ footer .copy {
   }
   .navbar-toggle {
     display: block;
-    border: 1px solid #ddd;
+    border: 1px solid #8aa62d !important;
     border-radius: 1px;
   }
   .navbar-collapse {
@@ -256,5 +262,18 @@ footer .copy {
   .curso {
     padding-right: 15px;
     padding-left: 15px;
+  }
+}
+@media (max-width: 620px) {
+  .logo .imgLogo {
+    display: none;
+  }
+  .logo .imgLogoResp {
+    display: block;
+  }
+}
+@media (max-width: 450px) {
+  .logo .imgLogoResp {
+    width: 90%;
   }
 }

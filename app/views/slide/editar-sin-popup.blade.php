@@ -26,7 +26,7 @@
                                            <div class="divCargaImgSlideHome">
                                                <input type="hidden" name="imagen_slide_editar[]" value="{{$img->id}}">
                                                <img src="{{ URL::to($img->carpeta.$img->nombre) }}" alt="{{$slide->titulo}}">
-                                                <i onclick="borrarImagenReload('{{ URL::to('admin/imagen/borrar') }}', '{{$img->id}}');" class="fa fa-times-circle fa-lg">borrar</i>
+                                                <i onclick="borrarImagenReload('{{ URL::to('admin/imagen/borrar') }}', '{{$img->id}}');" class="fa fa-times-circle fa-lg"></i>
                                             </div>
                                              <?php
                                              /*

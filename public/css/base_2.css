@@ -164,7 +164,13 @@ label.btn + input.form-control {
 .navbar-toggle {
   margin-top: 1.6em;
   padding: 11px 8px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #8aa62d;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: #8aa62d;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background: #fff;
 }
 .divMenu {
   float: right;
@@ -564,6 +570,30 @@ p.marca {
 }
 .archivoCargado i {
   font-size: 1.4em;
+}
+/* -- SLIDE HOME -- */.divCargaImgSlideHome {
+  position: relative;
+}
+.divCargaImgSlideHome img {
+  width: 100%;
+  height: auto;
+}
+.divCargaImgSlideHome canvas {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.divCargaImgSlideHome i {
+  position: absolute;
+  top: 0.6em;
+  right: 0.6em;
+  font-size: 1.5em;
+  color: #337ab7;
+  background: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  cursor: pointer;
 }
 /* -- PORTFOLIO SIMPLE -- *//*.divCargaImgHoriz {@include fondoDestacado; @include marginBottom2;}*/.resultadoImgCargada h3 {
   margin-top: 12px !important;

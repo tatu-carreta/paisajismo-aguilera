@@ -77,7 +77,9 @@ header {background: #000;}
 .navbar-default {background:transparent; border:none}
 .dropdown-menu {background: #878979; padding: 15px 0; font-size: 16px; border-radius: 0; border: none}
 .open {background: #878979}
-.navbar-toggle {margin-top: 1.6em; padding: 11px 8px; background-color: rgba(255, 255, 255, 0.9); }
+.navbar-toggle {margin-top: 1.6em; padding: 11px 8px; background-color: rgba(138, 166, 45, 1);}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {background-color: rgba(138, 166, 45, 1);}
+.navbar-default .navbar-toggle .icon-bar {background: #fff}
 .divMenu {float: right;}
 #menuPrincipal {
 	a {background: transparent; font-size: 0.938em; color:#fff; font-weight: 300;background: transparent; height: 88px; line-height: 88px; padding: 0 30px !important; text-transform: uppercase; box-sizing: border-box;}
@@ -220,6 +222,13 @@ p.marca {padding: 0.5em 0 0 0.5em;}
 	.descargarPDF {margin-bottom:0}
 	i {font-size: 1.4em;}
 }
+
+/* -- SLIDE HOME -- */
+.divCargaImgSlideHome {position: relative; }
+.divCargaImgSlideHome img {width: 100%; height: auto}
+.divCargaImgSlideHome canvas {width: 100%; height: auto; overflow: hidden;}
+.divCargaImgSlideHome i {position: absolute; top: 0.6em; right: 0.6em; font-size: 1.5em; color: #337ab7; background: #fff; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; cursor:pointer;}
+
 
 /* -- PORTFOLIO SIMPLE -- */
 //Listados Obras

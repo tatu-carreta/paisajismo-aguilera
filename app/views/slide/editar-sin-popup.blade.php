@@ -10,7 +10,7 @@
                 <div class="col-md-8 cargaImg">
                     <h4>Cargar imagen nueva</h4>
                     <div class="fondoDestacado">
-                        <input type="hidden" ng-model="total_permitido" ng-init="total_permitido = {{ $total_permitido }}">
+                        <input type="hidden" ng-model="total_permitido" ng-init="total_permitido = {{ $total_permitido - count($slide->imagenes) }}">
                         @include('imagen.modulo-galeria-angular')
                     </div>
 

@@ -54,7 +54,7 @@ class ClienteController extends BaseController {
 
         Mail::send('emails.consulta-contacto', $this->array_view, function($message) use($data) {
             $message->from($data['email'], $data['nombre'])
-                    ->to('max.-ang@hotmail.com.ar')
+                    ->to('contactos@paisajismoaguilera.com.ar')
                     ->subject('Consulta')
             ;
         });

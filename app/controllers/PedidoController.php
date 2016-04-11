@@ -191,7 +191,7 @@ class PedidoController extends BaseController {
 
         Mail::send('emails.consulta-pedido', $this->array_view, function($message) use($data) {
             $message->from($data['email'], $data['nombre'])
-                    ->to('info@laurachuburu.com.ar')
+                    ->to('contactos@paisajismoaguilera.com.ar')
                     ->subject('Pedido de presupuesto')
             ;
         });

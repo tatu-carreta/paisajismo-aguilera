@@ -96,34 +96,7 @@
                                 </a>
                             </h1>
                             <a class="facebook" href="https://www.facebook.com/paisajismopatricia.aguilera?ref=ts"><span>Facebook</span></a>
-                             <!-- B T N   C A R R I T O -->
-                             <?php
-                             /*
-                            <a href="{{URL::to('carrito')}}" class="btnCarrito active"><span>{{ Lang::get('html.presupuesto') }}: {{Cart::count(false)}}</span><i class="fa fa-shopping-cart fa-lg"></i></a>
-                            */
-                             ?>
-                            <?php
-                            /*
-                            <!-- VENTANA CARRITO -->
-                            @if(Session::has('producto_carrito_subido'))
-                                @if(Session::get('producto_carrito_subido'))
-                                    <!-- ventana Carrito -->
-                                    <div id="ventanaCarrito" class="divEmergente">
-                                        <div class="triang"></div>
-                                        <a href="{{URL::to('carrito')}}" class="">
-                                        {{--<img class="imgArtPedido" src="@if(!is_null(Session::get('producto_carrito')->item()->imagen_destacada())){{ URL::to(Session::get('producto_carrito')->item()->imagen_destacada()->carpeta.Session::get('producto_carrito')->item()->imagen_destacada()->nombre) }}@else{{URL::to('images/sinImg.gif')}}@endif" alt="">--}}
-                                        <i class="fa fa-shopping-cart fa-2x"></i>
-                                        <p>{{ Lang::get('html.ventana_producto') }}</p>
-                                        {{--<span>Cod: {{ Session::get('producto_carrito')->item()->titulo }}</span>--}}
-                                        </a>
-                                        <div class="cerrarEmergente cerrarVentanaCarrito"><i class="fa fa-times fa-lg"></i></div>
-                                    </div>
-                                @endif
-                            @endif
-                             * 
-                             */
-                            ?>
-                            
+
                             <!-- N A V -->
                             @include('menu.'.$project_name.'-desplegar-menu')
 
@@ -132,19 +105,6 @@
                     </div>
                 </div>
             </header>  
-            <?php
-                            /*
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ Lang::get('locales.label') }} <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                    @foreach(Lang::get('locales.option') as $mKey => $mLanguage)
-                        <li>{{ HTML::linkAction('BaseController@setLocale', $mLanguage, array($mKey, $type, $ang)) }}</li>
-                    @endforeach
-                </ul>
-            </li>
-                             * 
-                             */
-            ?>
 
             @yield('slide-estatico') 
 
@@ -170,12 +130,8 @@
                 @endif
             @show
         </footer>
-        <!--
-        <script src="{{URL::to('ckeditor/ckeditor.js')}}"></script>
-        <script src="{{URL::to('ckeditor/adapters/jquery.js')}}"></script>-->
+
         <script src="{{URL::to('js/jquery.lazyload.min.js')}}"></script>
-        <!--<script src="{{URL::to('js/jquery-ui.min.js')}}"></script>
-        <!--<script src="{{URL::to('js/div-ventana-carrito.js')}}"></script>-->
         
         <script>
             $(function () {

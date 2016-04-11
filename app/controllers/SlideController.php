@@ -22,6 +22,7 @@ class SlideController extends BaseController {
             $this->array_view['total_permitido'] = 10;
             $name_arch = 'agregar-sin-popup';
         }
+        $this->array_view['accion'] = 'A';
 
         return View::make($this->folder_name . '.' . $name_arch, $this->array_view);
     }
@@ -53,7 +54,7 @@ class SlideController extends BaseController {
 
         $this->array_view['slide'] = $slide;
         $this->array_view['continue'] = $next;
-        
+
         $this->array_view['tipo'] = $tipo;
 
         if ($tipo == 'I') {
@@ -61,6 +62,7 @@ class SlideController extends BaseController {
         } else {
             $this->array_view['total_permitido'] = 10;
         }
+        $this->array_view['accion'] = 'E';
 
         return View::make($this->folder_name . '.editar-sin-popup', $this->array_view);
     }

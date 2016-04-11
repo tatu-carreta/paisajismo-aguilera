@@ -352,10 +352,22 @@ class Imagen extends Eloquent {
             $filename = $filename . ".{$extension}";
         }
 
-        Image::make($imagen_slide)->resize(null, 340, function ($constraint) {
+        $image = Image::make($imagen_slide)->resize(null, 340, function ($constraint) {
             $constraint->aspectRatio();
             $constraint->upsize();
-        })->save($directory . $filename);
+        });
+
+        $ext = "{$extension}";
+        if ($ext == 'gif') {
+            copy($imagen_slide->getRealPath(), $directory . $filename);
+        } else {
+            $image->save($directory . $filename);
+        }
+
+//        Image::make($imagen_slide)->resize(null, 340, function ($constraint) {
+//            $constraint->aspectRatio();
+//            $constraint->upsize();
+//        })->save($directory . $filename);
 
 
         $answer = array('answer' => 'File transfer completed', 'imagen_path' => $filename);

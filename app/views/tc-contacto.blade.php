@@ -7,7 +7,7 @@
         <div class="row">
             <div class="col-md-12 marginBottom2">
                 <h2>{{ Lang::get('html.contacto.titulo_contacto') }}</h2>
-                <p>Si desea realizar cualquier consulta puede comunicarse con nosotros por teléfono, por e-mail o completando el siguiente formulario. Le responderemos a la brevedad.</p>
+                <p>Comuníquese con nosotros. Le responderemos a la brevedad.</p>
             </div>
         </div>
         <div class="row ">

@@ -7,6 +7,9 @@ body {
 h1, h2, h3 {
   font-weight: 400;
 }
+h3 {
+  font-size: 26px;
+}
 section {
   padding-top: 0;
 }
@@ -98,6 +101,7 @@ a.facebook span {
   padding-right: 2em;
   border-right: 1px solid #fff;
   font-size: 1.2em;
+  font-weight: 300;
 }
 .presentacion img {
   display: inline-block;
@@ -110,9 +114,13 @@ a.facebook span {
 .curso a {
   color: #8aa62d;
   text-decoration: none;
+  margin: 0 6px;
 }
 .curso a:hover {
   text-decoration: underline !important;
+}
+.curso p + a {
+  margin-left: 0;
 }
 .cuerpoColor {
   background: #d3cadc url(../images/fondo-verano.jpg) no-repeat top left;
@@ -123,6 +131,9 @@ a.facebook span {
 .cuerpoColor h2 {
   color: #6d8323;
   font-size: 30px;
+}
+.cuerpoColor p {
+  font-size: 18px;
 }
 a.takano {
   display: block;
@@ -146,14 +157,15 @@ a.takano span {
   width: 100%;
 }
 .slideInternoItem {
-  width: 80%;
-  height: 80%;
-  top: 54px;
-  left: 48px;
+  width: 85%;
+  height: 85%;
+  top: 45px;
+  left: 40px;
 }
 .slideInternoItem img {
   width: 100%;
   height: auto;
+  border: 14px solid #fff;
 }
 .colTable {
   display: table;
@@ -170,7 +182,6 @@ a.takano span {
 .colCell h3 {
   margin-top: 0;
   font-size: 22px;
-  color: red;
 }
 footer {
   padding-top: 5px;
@@ -191,6 +202,35 @@ footer .copy {
 }
 footer .copy p {
   margin: 0;
+}
+.navbar-toggle {
+  margin-right: 10px !important;
+}
+.form-group {
+  margin-bottom: 5px !important;
+}
+.col-contacto .btn {
+  margin-top: 8px !important;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
+  background: #000;
+}
+.colfotos-tkn {
+  width: 200px;
+  padding-right: 20px;
+}
+.colfotos-tkn img {
+  width: 100%;
+}
+.takano .colCell {
+  padding-left: 0 !important;
+}
+.takano .colTable {
+  margin-top: 20px !important;
+}
+.takano h3 {
+  font-size: 24px !important;
 }
 /* A D M I N *//* M E D I A  Q U E R Y */@media (max-width: 1200px) {
   #menuPrincipal a {
@@ -245,10 +285,8 @@ footer .copy p {
   #menuPrincipal a {
     float: none;
   }
-  .slideInternoItem {
-    position: relative;
-    top: 44px;
-    left: 39px;
+  .slideInternos {
+    min-height: 500px;
   }
   .presentacion {
     border: none;
@@ -263,6 +301,19 @@ footer .copy p {
     padding-right: 15px;
     padding-left: 15px;
   }
+  .curso h3 {
+    border-top: 1px solid #666;
+    padding-top: 20px;
+  }
+  .imgSlideFlex {
+    height: 260px;
+  }
+  .imgSlideFlex img {
+    height: 260px;
+  }
+  .banner {
+    min-height: 260px;
+  }
 }
 @media (max-width: 620px) {
   .logo .imgLogo {
@@ -271,9 +322,42 @@ footer .copy p {
   .logo .imgLogoResp {
     display: block;
   }
+  .slideInternos {
+    min-height: 400px;
+  }
+  .takano .colCell {
+    display: block;
+  }
+}
+@media (max-width: 520px) {
+  .slideInternos {
+    min-height: 300px;
+  }
+  .slideInternoItem img {
+    border: 10px solid #fff;
+  }
 }
 @media (max-width: 450px) {
+  .logo {
+    width: 220px;
+  }
   .logo .imgLogoResp {
-    width: 90%;
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .slideInternos {
+    min-height: 220px;
+  }
+  .slideInternoItem img {
+    border: 8px solid #fff;
+  }
+}
+@media (max-width: 360px) {
+  a.facebook {
+    display: none;
+  }
+  .logo {
+    width: 180px;
   }
 }

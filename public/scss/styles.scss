@@ -1,5 +1,6 @@
 body {background-color: #000; color: #fff; font-family: 'Alegreya Sans', sans-serif; font-size: 16px;}
 h1, h2, h3 {font-weight: 400}
+h3 {font-size:26px}
 section {padding-top: 0}
 label {font-weight: 500}
 em {font-family: Georgia, "Times New Roman", Times, serif;}
@@ -29,17 +30,20 @@ a.facebook {width: 41px; height: 42px; display: block; float: right; background-
 .navbar-nav>li {float: none; display: inline-block;}
 
 .banner {min-height: 350px; margin-bottom: 2em; }
-.presentacion{ padding-right: 2em; border-right:1px solid #fff; font-size: 1.2em;
+.presentacion{ padding-right: 2em; border-right:1px solid #fff; font-size: 1.2em; font-weight:300;
     img {display: inline-block; float: right; padding-right: 2em}
 }
 .curso {padding-left: 2em;
-    a {color: #8AA62D;text-decoration: none;
+    a {color: #8AA62D;text-decoration: none; margin:0 6px;
         &:hover {text-decoration: underline !important;}
     }
 }
 
+.curso p+a {margin-left:0}
+
 .cuerpoColor {background: #D3CADC url(../images/fondo-verano.jpg) no-repeat top left; padding: 12em 3em 3em; color:#000; position: relative;
     h2 {color: #6D8323; font-size: 30px;}
+    p {font-size:18px}
 }
 a.takano {display: block; height: 105px; width: 123px; background-image: url(../images/btn-takano.png); position: absolute; top:1em; right: 1em;
     span {display: none}
@@ -47,13 +51,13 @@ a.takano {display: block; height: 105px; width: 123px; background-image: url(../
 
 .slideInternos {background: url(../images/fondo-galerias.png) no-repeat center top; background-size: 100%; min-height: 420px; position: relative;}
 .owl-item {width: 100%}
-.slideInternoItem {width: 80%; height: 80%; top: 54px; left: 48px;
-    img {width: 100%; height: auto}
+.slideInternoItem {width: 85%; height: 85%; top: 45px; left: 40px;
+    img {width: 100%; height: auto; border:14px solid #fff}
     }   
 .colTable {display: table}
 .colCell {display: table-cell; vertical-align:top; padding-left: 2em;
     img {margin-bottom: 1em; display: inline-block;}
-    h3 {margin-top: 0; font-size: 22px; color:red;}
+    h3 {margin-top: 0; font-size: 22px;}
     }
 
 footer {padding-top: 5px; margin: 40px 0px 50px 0px; letter-spacing: 1px; color: #999; font-size: 16px;
@@ -63,6 +67,15 @@ footer {padding-top: 5px; margin: 40px 0px 50px 0px; letter-spacing: 1px; color:
             p {margin: 0}
             }
 }
+
+.navbar-toggle {margin-right:10px!important}
+.form-group {margin-bottom:5px!important}
+.col-contacto .btn {margin-top:8px!important; font-size:18px; text-transform:uppercase; color:#fff; background:#000}
+.colfotos-tkn {width:200px; padding-right:20px}
+.colfotos-tkn img {width:100%}
+.takano .colCell {padding-left:0!important}
+.takano .colTable {margin-top:20px!important}
+.takano h3 {font-size:24px!important}
 
 /* A D M I N */
 
@@ -91,18 +104,39 @@ footer {padding-top: 5px; margin: 40px 0px 50px 0px; letter-spacing: 1px; color:
     #menuPrincipal li:after {display:none;}
     #menuPrincipal a {float: none;}
 
-    .slideInternoItem {position:relative; top: 44px; left: 39px;}
+    .slideInternos {min-height: 500px;}
 
     .presentacion {border: none; padding-right: -15px; margin-bottom: 2em}
     .presentacion:after {content: ""; clear: both; }
     .curso { padding-right: 15px; padding-left: 15px;}
+    .curso h3 {border-top: 1px solid #666; padding-top: 20px}
+
+    .imgSlideFlex {height:260px}
+    .imgSlideFlex img {height:260px}
+    .banner {min-height:260px}
 }
 
 @media (max-width: 620px) {
     .logo .imgLogo {display:none}
     .logo .imgLogoResp {display:block}
+    .slideInternos {min-height:400px}
+    .takano .colCell {display:block}
 }
 
+@media (max-width: 520px) {
+    .slideInternos {min-height:300px}
+    .slideInternoItem img {border:10px solid #fff}
+}
 @media (max-width: 450px) {
-    .logo .imgLogoResp {width: 90%}
+    .logo {width:220px}
+    .logo .imgLogoResp {width: 100%}
+}
+
+@media (max-width: 400px) {
+    .slideInternos {min-height:220px}
+    .slideInternoItem img {border:8px solid #fff}
+}
+@media (max-width: 360px) {
+    a.facebook {display:none}
+    .logo {width:180px}
 }

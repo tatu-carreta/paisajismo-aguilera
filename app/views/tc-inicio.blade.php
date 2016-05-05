@@ -2,7 +2,7 @@
 
 @section('head')
     @parent
-
+	<meta property="og:image" content="http://paisajismoaguilera.com.ar/public/images/og-face.jpg"/>
 @stop
 
 @section('contenido')

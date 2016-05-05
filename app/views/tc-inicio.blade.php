@@ -35,7 +35,7 @@
             <div class="col-md-5 col-xs-12 curso">
                 <h3>Curso de Paisajismo</h3>
                 <p>El Curso es una aproximación al Paisajismo desde el Diseño y su propuesta consiste en aprender a planificar un espacio. Pensarlo, soñarlo y después, con las herramientas aprendidas diseñarlo.</p>
-                <a href="{{URL::to('curso-de-paisajismo')}}" class="links">Más info</a> | <a href="{{URL::to('contacto')}}" class="links">Consultas</a> | <a href="http://www.facebook.com/profile.php?id=100002159523290&ref=ts" target="_blank" class="links">Novedades en Facebook</a>
+                <a href="{{URL::to('curso-de-paisajismo')}}" class="links">Más info</a> | <a href="{{URL::to('contacto')}}" class="links">Consultas</a>
             </div> 
         </div>
 
